@@ -47,6 +47,7 @@ app.post('/api/calculate', (req, res) => {
 // Only start server if this file is run directly (not in tests)
 if (require.main === module) {
   app.listen(PORT, () => {
+    // eslint-disable-next-line no-console
     console.log(`Server running on port ${PORT}`);
   });
 }

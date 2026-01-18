@@ -31,33 +31,36 @@ export default [
     },
     rules: {
       ...js.configs.recommended.rules,
-      
+
       // Error prevention
       'no-console': ['warn', { allow: ['warn', 'error'] }],
-      'no-unused-vars': ['error', { 
-        argsIgnorePattern: '^_',
-        varsIgnorePattern: '^_',
-      }],
+      'no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+        },
+      ],
       'no-undef': 'error',
       'no-constant-condition': 'error',
       'no-duplicate-imports': 'error',
-      
+
       // Best practices
-      'eqeqeq': ['error', 'always'],
-      'curly': ['error', 'all'],
+      eqeqeq: ['error', 'always'],
+      curly: ['error', 'all'],
       'no-var': 'error',
       'prefer-const': 'error',
       'prefer-arrow-callback': 'error',
       'no-throw-literal': 'error',
       'no-return-await': 'error',
-      
+
       // Code style (let Prettier handle most formatting)
-      'semi': ['error', 'always'],
-      'quotes': ['error', 'single', { avoidEscape: true }],
+      semi: ['error', 'always'],
+      quotes: ['error', 'single', { avoidEscape: true }],
       'comma-dangle': ['error', 'always-multiline'],
     },
   },
-  
+
   // Ignore patterns
   {
     ignores: [
