@@ -1,0 +1,46 @@
+# Node modules (installed during build)
+node_modules
+npm-debug.log
+
+# Git
+.git
+.gitignore
+
+# CI/CD
+.github
+.gitlab-ci.yml
+
+# Testing
+coverage
+*.test.js
+*.spec.js
+__tests__
+
+# Development files
+.env.local
+.env.development
+.vscode
+.idea
+
+# Documentation
+README.md
+CHANGELOG.md
+*.md
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts (if using TypeScript/build step)
+dist
+build
+.cache
